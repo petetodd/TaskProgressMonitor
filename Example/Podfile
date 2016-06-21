@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'TaskProgressMonitor_Example' do
+  pod 'TaskProgressMonitor', :path => '../'
+
+  target 'TaskProgressMonitor_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+  end
+end
