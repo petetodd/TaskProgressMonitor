@@ -1,0 +1,22 @@
+{
+  "name": "TaskProgressMonitor",
+  "version": "0.1.0",
+  "summary": "A short description of TaskProgressMonitor.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TaskProgressMonitor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Peter Todd": "peter@petertodd.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TaskProgressMonitor.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TaskProgressMonitor/Classes/**/*"
+}

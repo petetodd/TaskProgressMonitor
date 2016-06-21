@@ -1,0 +1,6 @@
+framework module TaskProgressMonitor {
+  umbrella header "TaskProgressMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
