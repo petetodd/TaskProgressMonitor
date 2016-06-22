@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9C8C09F89CC8E6CA7735D2A8 /* Pods_TaskProgressMonitor_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B166765E59B05A4DC21C95 /* Pods_TaskProgressMonitor_Tests.framework */; };
+		D0149AF31D1952CF0013F663 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0149AF21D1952CF0013F663 /* UIApplicationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7A80CE0D665310B2CC76F7D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D0149AF21D1952CF0013F663 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		E1B166765E59B05A4DC21C95 /* Pods_TaskProgressMonitor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskProgressMonitor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6411A64218C5267DB55A566 /* Pods-TaskProgressMonitor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskProgressMonitor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskProgressMonitor_Tests/Pods-TaskProgressMonitor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F98474D1C321AFD345B22857 /* Pods-TaskProgressMonitor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskProgressMonitor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskProgressMonitor_Tests/Pods-TaskProgressMonitor_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		607FACD21AFB9204008FA782 /* Example for TaskProgressMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				D0149AF21D1952CF0013F663 /* UIApplicationExtensions.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0149AF31D1952CF0013F663 /* UIApplicationExtensions.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

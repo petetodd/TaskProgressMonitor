@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TaskProgressMonitor'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Generic task progres monitor with progress UI and Logging.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,10 @@ Generic task monitor to review progress and also log output.  For use in apps co
 
   s.source_files = 'TaskProgressMonitor/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TaskProgressMonitor' => ['TaskProgressMonitor/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'CustomXibs' => ['TaskProgressMonitor/Xibs/*.xib']
+  }
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

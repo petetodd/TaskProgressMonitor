@@ -1,9 +1,9 @@
 {
   "name": "TaskProgressMonitor",
-  "version": "0.1.0",
-  "summary": "A short description of TaskProgressMonitor.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/TaskProgressMonitor",
+  "version": "0.1.2",
+  "summary": "Generic task progres monitor with progress UI and Logging.",
+  "description": "Generic task monitor to review progress and also log output.  For use in apps communicating with remote servers",
+  "homepage": "https://github.com/petetodd/TaskProgressMonitor",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "Peter Todd": "peter@petertodd.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/TaskProgressMonitor.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/petetodd/TaskProgressMonitor.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TaskProgressMonitor/Classes/**/*"
+  "source_files": "TaskProgressMonitor/Classes/**/*",
+  "resource_bundles": {
+    "CustomXibs": [
+      "TaskProgressMonitor/Xibs/*.xib"
+    ]
+  }
 }
