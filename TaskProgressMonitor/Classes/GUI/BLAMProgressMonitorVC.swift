@@ -26,9 +26,9 @@ public class BLAMProgressMonitorVC: UIViewController {
         // Do any additional setup after loading the view.
         //     let dataSourceTV = tableView.dataSource as! BGSPMTableViewDataSource
         //   tableView.dataSource = dataSourceTV
-   //     configGestures()
+        configGestures()
         // Create the job
-   //     createJob()
+        createJob()
         //    dataSourceTV.selectedJob = selectedJob
         
     
@@ -51,19 +51,22 @@ public class BLAMProgressMonitorVC: UIViewController {
 */
     }
 
-    public override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func configGestures()
+    {
+        let tapDismis = UITapGestureRecognizer()
+        tapDismis.addTarget(self, action: #selector(dismissView))
+        self.circleView.addGestureRecognizer(tapDismis)
     }
- 
-    /*
-    // MARK: - Navigation
+    
+    func dismissView(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // MARK: - Create Job in Core Data
+    // Used to log job enable reporting on progress of previous jobs
+    func createJob(){
+        
+    }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
