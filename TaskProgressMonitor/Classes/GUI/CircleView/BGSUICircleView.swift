@@ -25,9 +25,9 @@ public class BGSUICircleView: UIView {
     var fillColor : UIColor!
     var fillAlpha : Float!
     
-    var lblText = ""
+    var lblText = "No Task"
     // Percent Display
-    var showPercentage = false
+    var showPercentage = true // Default to show percentage
     var fontNamePercent = "Arial"
     var fontsizePercent : Float = 45
     // Label text
@@ -80,6 +80,8 @@ public class BGSUICircleView: UIView {
         }
         // Radius - we want as big a circle as will fit centered in the view
         var radius : Float = (min(Float(self.frame.size.width), Float(self.frame.size.height)))/2;
+        // Give it a 10% margine
+        radius = radius * 0.9
         
         
         
