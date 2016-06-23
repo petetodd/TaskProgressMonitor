@@ -13,7 +13,7 @@ import TaskProgressMonitor
 class ViewController: UIViewController {
     
     var isBlinking = false
-    let blinkingLabel = BlinkingLabel(frame: CGRectMake(10, 20, 200, 30))
+  //  let blinkingLabel = BlinkingLabel(frame: CGRectMake(10, 20, 200, 30))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,28 +50,12 @@ class ViewController: UIViewController {
     }
     
     private func displayPM(jobTitle : String?){
+        let ctrl = BLAMControllerTaskManager()
+        let dispVC = ctrl.progressMonitorVC()
+        
+        presentViewController(dispVC, animated: false, completion: nil)
         
         
-        let podBundle = NSBundle(forClass: BLAMProgressMonitorVC().classForCoder)
-        
-        if let bundleURL = podBundle.URLForResource("CustomXibs", withExtension: "bundle") {
-            
-            if let bundle = NSBundle(URL: bundleURL) {
-                let dispVC = BLAMProgressMonitorVC(nibName: "BLAMProgressMonitorVC", bundle: bundle)
-                presentViewController(dispVC, animated: false, completion: nil)
-                
-            }else {
-                
-                assertionFailure("Could not load the bundle")
-                
-            }
-            
-        }else {
-            
-            assertionFailure("Could not create a path to the bundle")
-            
-        }
-
 
     }
     
