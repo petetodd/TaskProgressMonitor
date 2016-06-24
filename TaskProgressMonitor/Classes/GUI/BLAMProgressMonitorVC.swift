@@ -65,6 +65,8 @@ public class BLAMProgressMonitorVC: UIViewController {
     // MARK: - Create Job in Core Data
     // Used to log job enable reporting on progress of previous jobs
     func createJob(){
+        BLAMCoreDataControllerTaskManager.sharedInstance.createTest()
+        /*
         let podBundle = NSBundle(forClass: self.classForCoder)
         
         guard let bundleURL = podBundle.URLForResource("CustomXibs", withExtension: "bundle") else{
@@ -78,6 +80,7 @@ public class BLAMProgressMonitorVC: UIViewController {
             return}
         
         print("It worked!!!!!")
+ */
 
    
         
