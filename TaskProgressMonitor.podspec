@@ -1,6 +1,6 @@
 #
 # Be sure to run `pod lib lint TaskProgressMonitor.podspec' to ensure this is a
-# valid spec before submitting.  
+# valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
@@ -33,11 +33,12 @@ Generic task monitor to review progress and also log output.  For use in apps co
   s.source_files = 'TaskProgressMonitor/Classes/**/*'
   
   s.resource_bundles = {
-     'CustomXibs' => ['TaskProgressMonitor/Xibs/*.xib']
+     'CustomXibs' => ['TaskProgressMonitor/Xibs/*.xib', 'TaskProgressMonitor/CoreData/*.xcdatamodeld']
   }
 
 
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'CoreData'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

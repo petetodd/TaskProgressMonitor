@@ -65,6 +65,22 @@ public class BLAMProgressMonitorVC: UIViewController {
     // MARK: - Create Job in Core Data
     // Used to log job enable reporting on progress of previous jobs
     func createJob(){
+        let podBundle = NSBundle(forClass: self.classForCoder)
+        
+        guard let bundleURL = podBundle.URLForResource("CustomXibs", withExtension: "bundle") else{
+            print("Something went wrong 1!")
+            return}
+        guard let bundle = NSBundle(URL: bundleURL) else {
+            print("Something went wrong 2!")
+            return}
+        guard let momURL = bundle.URLForResource("BLAMTPRDatamodel", withExtension: "momd") else {
+            print("Something went wrong 3!")
+            return}
+        
+        print("It worked!!!!!")
+
+   
+        
         
     }
 
