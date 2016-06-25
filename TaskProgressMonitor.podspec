@@ -33,11 +33,12 @@ Generic task monitor to review progress and also log output.  For use in apps co
   s.source_files = 'TaskProgressMonitor/Classes/**/*'
   
   s.resource_bundles = {
-     'CustomXibs' => ['TaskProgressMonitor/Xibs/*.xib']
+     'CustomXibs' => ['TaskProgressMonitor/Xibs/*.xib', 'TaskProgressMonitor/CoreData/*.xcdatamodeld']
   }
 
 
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'CoreData'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

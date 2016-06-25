@@ -17,7 +17,6 @@ public class BLAMControllerTaskManager: NSObject {
         if let bundleURL = podBundle.URLForResource("CustomXibs", withExtension: "bundle") {
             
             if let bundle = NSBundle(URL: bundleURL) {
-                
                 let dispVC = BLAMProgressMonitorVC(nibName: "BLAMProgressMonitorVC", bundle: bundle)
                 return dispVC
                 
@@ -35,8 +34,14 @@ public class BLAMControllerTaskManager: NSObject {
             return UIViewController()
 
         }
-
-        
-        
     }
+    
+    public func centeredBlueDisplay() -> UIViewControllerTransitioningDelegate{
+        let transitionManager = BLAMTPMTransitionCenteredModal()
+        return transitionManager
+
+    }
+    
+    
+    
 }

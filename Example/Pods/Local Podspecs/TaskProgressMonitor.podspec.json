@@ -21,7 +21,9 @@
   "source_files": "TaskProgressMonitor/Classes/**/*",
   "resource_bundles": {
     "CustomXibs": [
-      "TaskProgressMonitor/Xibs/*.xib"
+      "TaskProgressMonitor/Xibs/*.xib",
+      "TaskProgressMonitor/CoreData/*.xcdatamodeld"
     ]
-  }
+  },
+  "frameworks": "CoreData"
 }
