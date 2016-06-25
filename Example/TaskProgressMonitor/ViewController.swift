@@ -52,8 +52,20 @@ class ViewController: UIViewController {
     private func displayPM(jobTitle : String?){
         let ctrl = BLAMControllerTaskManager()
         let dispVC = ctrl.progressMonitorVC()
+        // Display centered
+        let transitionManager = ctrl.centeredBlueDisplay()
+        dispVC.transitioningDelegate = transitionManager
+        if dispVC.transitioningDelegate == nil{
+            print("DEBUG no transition 1")
+        }
         
-        presentViewController(dispVC, animated: false, completion: nil)
+
+        
+        if dispVC.transitioningDelegate == nil{
+            print("DEBUG no transition")
+        }
+        
+        presentViewController(dispVC, animated: true, completion: nil)
         
         
 
